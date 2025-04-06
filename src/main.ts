@@ -18,5 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#greet-form")?.addEventListener("submit", (e) => {
     e.preventDefault();
     greet();
+    document.location.href = "/pages/home.html";
+    console.log(document.body.innerHTML);
   });
 });
